@@ -1,0 +1,71 @@
+/* Selector de tipo etiqueta, no se recomienda usar 
+Se suele usar para el body.
+*/
+body{
+    font-family: 'Arial';
+
+}
+
+li{
+    color: slateblue;
+    font-size: 20px;
+}
+
+/*
+Selector de clase, esto se hace con puntos al inicio y luego el nombre
+de la clase. Todas las clases con el mismo nombre serán modificadas.
+
+En el caso que de clases con nombres separados, se debe utilizar otro punto
+para seleccionar. ej: class="pelicula negrita", se debe hacer como en 
+la linea 24**.
+
+De igual manera los elementos que contengan el nombre de la clase en la 
+segunda palabra se veran afectados por el selector de clase. ejemplo
+linea 39, afecta al elemento spiderman y spiderman verse
+*/
+.peliculas{
+    color: crimson;
+}
+.pelicula.negrita{
+    color: rebeccapurple;
+    font-weight: bold;
+    
+}
+
+.series{
+    font-size: 25px;
+}
+
+.espaciado{
+    letter-spacing: 10px;
+}
+
+/*
+Selector por ID
+Se debe poner un hash # al comienzo y luego el nombre del id, sirve para 
+modificar solo un elemento
+
+*/
+
+#spidermanNoWayHome{
+    font-size: 25px;
+    color: tomato;
+    text-decoration: underline;
+}
+
+#temporada3{
+    font-size: 14px;
+    color: seagreen;
+}
+
+/*
+Selector Universal
+Con este selector seleccionamos todos los elementos del html
+Especificidad de 0, no cuenta tanto.
+
+En cada selector viene incluido oculto un selector universal.
+*/
+
+*{
+    background-color: peachpuff;
+}
